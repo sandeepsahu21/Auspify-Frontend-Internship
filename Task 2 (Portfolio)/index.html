@@ -1,0 +1,229 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=sandeepice-width, initial-scale=1.0">
+    <meta name="description" content="Personal portfolio of a Python Full Stack Developer.">
+    <title>My Portfolio | Full Stack Developer</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <header class="navbar">
+        <a href="#home" class="logo">Sandeep <span>Portfolio.</span></a>
+
+        <button class="menu-toggle" aria-label="Toggle navigation"
+                aria-expanded="false">☰</button>
+
+        <nav class="nav-links" id="navLinks">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact" class="nav-contact">Contact Me</a>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero -->
+        <section class="hero" id="home">
+            <div class="hero-content">
+                <p class="eyebrow">HELLO, WELCOME TO MY PORTFOLIO</p>
+
+                <h1>Hi, I'm a <span>Python Full Stack Developer</span></h1>
+
+                <p class="hero-text">
+                    I build responsive websites and interactive web
+                    applications using modern web technologies.
+                    I enjoy learning, solving problems, and creating
+                    useful digital experiences.
+                </p>
+
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn primary-btn">View My Work →</a>
+                    <a href="#contact" class="btn outline-btn">Contact Me</a>
+                </div>
+
+                <div class="social-text">
+                    Python · Django · React · MySQL
+                </div>
+            </div>
+
+            <div class="hero-card">
+                <div class="code-header">
+                    <span></span><span></span><span></span>
+                    <p>Sandeep.py</p>
+                </div>
+                <div class="code-content">
+                    <p><span class="code-purple">class</span> Sandeep:</p>
+                    <p class="indent">name = <span class="code-green">"Sandeep"</span></p>
+                    <p class="indent">skills = [</p>
+                    <p class="indent2"><span class="code-green">"Python"</span>,</p>
+                    <p class="indent2"><span class="code-green">"Django"</span>,</p>
+                    <p class="indent2"><span class="code-green">"React.js"</span></p>
+                    <p class="indent">]</p>
+                    <p class="indent"><span class="code-purple">def</span> build(self):</p>
+                    <p class="indent2"><span class="code-purple">return</span> <span class="code-green">"Great websites!"</span></p>
+                </div>
+                <div class="code-footer">● Ready to build something great</div>
+            </div>
+        </section>
+
+        <!-- About -->
+        <section class="section about" id="about">
+            <p class="eyebrow">GET TO KNOW ME</p>
+            <h2>About <span>Me</span></h2>
+
+            <p class="section-description">
+                I am a Computer Science graduate passionate about
+                web elopment. I work with frontend and backend
+                technologies to build functional, user-friendly
+                applications. I am always looking for opportunities
+                to learn new skills and contribute to real-world projects.
+            </p>
+
+            <div class="about-stats">
+                <div class="stat">
+                    <strong>3+</strong>
+                    <span>Projects Built</span>
+                </div>
+                <div class="stat">
+                    <strong>6+</strong>
+                    <span>Core Technologies</span>
+                </div>
+                <div class="stat">
+                    <strong>100%</strong>
+                    <span>Learning Mindset</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills -->
+        <section class="section skills" id="skills">
+            <p class="eyebrow">WHAT I WORK WITH</p>
+            <h2>My Technical <span>Skills</span></h2>
+            <p class="section-description">
+                Technologies I use to develop web applications.
+            </p>
+
+            <div class="skills-grid">
+                <div class="skill-card"><span>🐍</span><h3>Python</h3><p>Programming</p></div>
+                <div class="skill-card"><span>⚙️</span><h3>Django</h3><p>Backend</p></div>
+                <div class="skill-card"><span>🌐</span><h3>HTML5</h3><p>Web Structure</p></div>
+                <div class="skill-card"><span>🎨</span><h3>CSS3</h3><p>Web Styling</p></div>
+                <div class="skill-card"><span>⚡</span><h3>JavaScript</h3><p>Interactivity</p></div>
+                <div class="skill-card"><span>⚛️</span><h3>React.js</h3><p>Frontend</p></div>
+                <div class="skill-card"><span>🗄️</span><h3>MySQL</h3><p>Database</p></div>
+                <div class="skill-card"><span>🔧</span><h3>Git & GitHub</h3><p>Version Control</p></div>
+            </div>
+        </section>
+
+        <!-- Projects -->
+        <section class="section projects" id="projects">
+            <p class="eyebrow">SOME THINGS I'VE BUILT</p>
+            <h2>My Recent <span>Projects</span></h2>
+            <p class="section-description">
+                A selection of projects that demonstrate my development skills.
+            </p>
+
+            <div class="projects-grid">
+                <article class="project-card">
+                    <div class="project-number">PROJECT 01</div>
+                    <div class="project-icon">🎬</div>
+                    <h3>Movie Ticket Booking</h3>
+                    <p>
+                        A React-based movie browsing and booking interface
+                        with sliders, animations, and booking features.
+                    </p>
+                    <div class="tags">
+                        <span>React</span><span>Tailwind CSS</span><span>JavaScript</span>
+                    </div>
+                    <a href="#contact" class="project-link">Ask About Project →</a>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-number">PROJECT 02</div>
+                    <div class="project-icon">🏡</div>
+                    <h3>Airbnb Clone</h3>
+                    <p>
+                        A full-stack accommodation listing application
+                        with user authentication, reviews, and CRUD features.
+                    </p>
+                    <div class="tags">
+                        <span>Node.js</span><span>Express</span><span>MongoDB</span>
+                    </div>
+                    <a href="#contact" class="project-link">Ask About Project →</a>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-number">PROJECT 03</div>
+                    <div class="project-icon">🔐</div>
+                    <h3>Adyanta Login App</h3>
+                    <p>
+                        A login, registration, and dashboard application
+                        connected to a Flask API and SQLite database.
+                    </p>
+                    <div class="tags">
+                        <span>React Native</span><span>Flask</span><span>SQLite</span>
+                    </div>
+                    <a href="#contact" class="project-link">Ask About Project →</a>
+                </article>
+            </div>
+        </section>
+
+        <!-- Contact -->
+        <section class="section contact" id="contact">
+            <p class="eyebrow">LET'S CONNECT</p>
+            <h2>Get In <span>Touch</span></h2>
+            <p class="section-description">
+                Have an opportunity or project in mind? Send me a message.
+            </p>
+
+            <form id="contactForm" class="contact-form">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="name">Your Name</label>
+                        <input type="text" id="name" name="name"
+                               placeholder="Enter your name" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Your Email</label>
+                        <input type="email" id="email" name="email"
+                               placeholder="Enter your email" required>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="subject">Subject</label>
+                    <input type="text" id="subject" name="subject"
+                           placeholder="What is this about?" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Your Message</label>
+                    <textarea id="message" name="message" rows="5"
+                              placeholder="Write your message here..."
+                              required></textarea>
+                </div>
+
+                <button type="submit" class="btn primary-btn">
+                    Send Message →
+                </button>
+
+                <p id="formStatus" class="form-status" role="status"></p>
+            </form>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <a href="#home" class="logo">Sandeep <span>Portfolio.</span></a>
+        <p>© 2026 My Portfolio. Built with HTML, CSS & JavaScript.</p>
+    </footer>
+
+</body>
+</html>

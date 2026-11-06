@@ -1,0 +1,87 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TaskFlow - To-Do App</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <main class="app">
+        <header class="header">
+            <div class="logo">
+                <span class="logo-icon">✓</span>
+                <span>TaskFlow</span>
+            </div>
+            <p class="tagline">Plan your day. Get things done.</p>
+        </header>
+
+        <section class="welcome">
+            <p class="eyebrow">YOUR PERSONAL TASK MANAGER</p>
+            <h1>Make today <span>count.</span></h1>
+            <p class="subtitle">One task at a time, one step closer to your goals.</p>
+        </section>
+
+        <section class="task-card">
+            <form id="task-form" class="task-form">
+                <input
+                    type="text"
+                    id="task-input"
+                    placeholder="What needs to be done?"
+                    maxlength="150"
+                    autocomplete="off"
+                    aria-label="Enter a new task"
+                >
+                <button type="submit" class="add-btn">+ Add Task</button>
+            </form>
+
+            <p id="error-message" class="error-message" role="alert"></p>
+
+            <div class="stats">
+                <div>
+                    <span class="stat-number" id="total-count">0</span>
+                    <span class="stat-label">Total</span>
+                </div>
+                <div>
+                    <span class="stat-number" id="pending-count">0</span>
+                    <span class="stat-label">Pending</span>
+                </div>
+                <div>
+                    <span class="stat-number" id="completed-count">0</span>
+                    <span class="stat-label">Completed</span>
+                </div>
+            </div>
+
+            <div class="list-heading">
+                <h2>My Tasks</h2>
+                <button type="button" id="clear-completed" class="clear-btn">
+                    Clear completed
+                </button>
+            </div>
+
+            <div class="filters" aria-label="Filter tasks">
+                <button type="button" class="filter-btn active" data-filter="all">All</button>
+                <button type="button" class="filter-btn" data-filter="pending">Pending</button>
+                <button type="button" class="filter-btn" data-filter="completed">Completed</button>
+            </div>
+
+            <ul id="task-list" class="task-list"></ul>
+
+            <div id="empty-state" class="empty-state">
+                <div class="empty-icon">✦</div>
+                <h3>No tasks yet</h3>
+                <p>Add your first task and start making progress!</p>
+            </div>
+
+            <p class="storage-note">✓ Your tasks are saved automatically in this browser.</p>
+        </section>
+
+        <footer>
+            <p>Built with HTML, CSS & JavaScript</p>
+            <p>TaskFlow © 2026</p>
+        </footer>
+    </main>
+</body>
+</html>
